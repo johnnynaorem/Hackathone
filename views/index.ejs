@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>To-Do List</h1>
+
+  <form action="/add" method="POST">
+    <input type="text" name="title" placeholder="Task Title" required>
+    <input type="date" name="dueDate" required>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ol>
+    <% tasks.forEach((task, index) => { %>
+      <li class="<%= task.completed ? 'completed' : '' %>">
+        <span><%= task.title %> - <%= task.dueDate %></span>
+        <a href="/toggle/<%= index %>">Toggle</a> | 
+        <a href="/delete/<%= index %>">Delete</a>
+      </li>
+    <% }) %>
+  </ol>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"] {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+a {
+  margin-left: 10px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
